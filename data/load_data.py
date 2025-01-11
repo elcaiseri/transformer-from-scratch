@@ -2,7 +2,7 @@ from datasets import load_dataset
 import pandas as pd
 
 def load_sample_data(sample_size=10000):
-    dataset = load_dataset('wmt14', 'de-en', split='test')
+    dataset = load_dataset('wmt14', 'de-en', split='train')
 
     data = []
     for i, example in enumerate(dataset):
